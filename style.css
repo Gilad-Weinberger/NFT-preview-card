@@ -1,0 +1,109 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    font-family: 'Outfit', sans-serif;;
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    margin-top: 170px;
+    height: 550px;
+    width: 310px;
+    padding: 24px 20px;
+    border-radius: 17px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nft-img{
+    width: 300px;
+    border-radius: 8px;
+}
+.view-icon{
+    position: absolute;
+    margin-top: 125px;
+    margin-left: -170px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.nft-img:hover{
+    filter: opacity(0.6);
+}
+.view-icon:hover{
+    opacity: 1;
+}
+.nft-img:hover ~ .view-icon{
+    opacity: 1;
+}
+.view-icon:hover ~ .nft-img{
+    filter: opacity(0.6);
+}
+.nft-name{
+    text-align: left;
+    font-size: 22px;
+    margin: 20px auto auto 4px;
+    font-weight: 600;
+}
+.description{
+    color: hsl(215, 51%, 70%);
+    text-align: left;
+    font-size: 18px;
+    margin: 20px auto 15px 4px;
+    font-weight: 300;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.eth-icon{
+    margin-right: 1px;
+    margin-bottom: -2px;
+}
+.eth{
+    color:hsl(178, 100%, 50%);
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 120px;
+}
+.time-icon{
+    margin-right: -9px;
+    margin-bottom: -2px;
+}
+.time-left{
+    color: hsl(215, 51%, 70%);
+    display: inline;
+    margin-left: 10px;
+}
+hr{
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    border: none;
+    width: 302px;
+    margin-bottom: 20px;
+}
+.avatar-img{
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    float: left;
+}
+.creation{
+    color: hsl(215, 51%, 70%);
+    font-size: 16.5px;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: -60px;
+}
+.name{
+    display: inline-block;
+    font-size: 16.5px;
+    font-weight: 300;
+}
+.nft-name:hover, .name:hover{
+    color: hsl(178, 100%, 50%);
+}
